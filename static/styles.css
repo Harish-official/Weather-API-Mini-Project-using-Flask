@@ -23,15 +23,9 @@ body {
   box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 }
 
-.temperature {
-  color: #a100ffff;
-  /* color: rgba(172, 85, 219, 0.959); */
-  font-family: "Ubuntu";
-  font-weight: 900;
-  font-size: 75px;
-  text-align: center;
-  margin: 32px auto;
-}
+/*--------------------------------------------------------------------------------------------*/
+
+/*--------------------------DYNAMIC TEXTS STYLING OF CLIMATE, CITY, DATE,TEMPERATURE --------------------------------------*/
 
 .climate {
   color: rgba(229, 229, 236, 0.945);
@@ -59,41 +53,18 @@ body {
   margin: 10px 15px;
 }
 
-.wrapper {
-  width: 98vw;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.temperature {
+  color: #a100ffff;
+  font-family: "Ubuntu";
+  font-weight: 900;
+  font-size: 75px;
+  text-align: center;
+  margin: 32px auto;
 }
 
-.search {
-  width: 100%;
-  /* position: relative; */
-  display: flex;
-}
+/*-----------------------------------------------------------------------------------*/
 
-.searchTerm {
-  font-family: "poppins";
-  font-size: medium;
-  width: 100%;
-  border: 3px solid #7f12d3;
-  padding: 10px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #fefefe;
-}
-
-.searchTerm:focus {
-  color: #000000;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.search-bar {
-  width: 100%;
-}
+/*-----------------------------ERROR PAGE STYLING ----------------------------------*/
 
 .error-message {
   display: flex;
@@ -109,6 +80,19 @@ body {
   color: #fefefe;
   font-weight: 800;
 }
+/*---------------------------------------------------------------------*/
+
+/*----------------------- FOOTER ---------------------------*/
+
+.footer {
+  text-align: center;
+  font-family: "Poppins";
+  color: white;
+}
+
+/*----------------------------------------------------------*/
+
+/*----------------------- BUTTON RELATED CODES FOR ERROR PAGE ---------------------------*/
 
 .myButton {
   box-shadow: -2px 1px 37px 9px #00000076;
@@ -131,13 +115,65 @@ body {
   top: 1px;
 }
 
-.footer {
-  text-align: center;
-  font-family: "Poppins";
-  color: white;
+/*-----------------------------------------------------------------------------------*/
+
+/*----------------------- SEARCH BAR RELATED CODES ---------------------------*/
+
+.search {
+  width: 100%;
+  display: flex;
 }
-@media (max-width: 1300px) {
+
+.searchTerm {
+  font-family: "poppins";
+  font-size: medium;
+  width: 100%;
+  border: 3px solid #7f12d3;
+  padding: 10px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #fefefe;
+}
+
+.searchTerm:focus {
+  color: #000000;
+}
+
+.search-bar {
+  width: 100%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/*-------------------------WRAPPER STYLING -------------------------------------*/
+
+.wrapper {
+  width: 98vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*----------------------- MEDIA QUERY RELATED RELATED CODES ---------------------------*/
+
+@media screen and (max-width: 1300px) {
   .wrapper {
     height: 100vh;
   }
 }
+
+@media screen and (max-height: 550px) {
+  .footer {
+    display: none;
+  }
+
+  body {
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
