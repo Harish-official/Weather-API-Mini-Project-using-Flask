@@ -44,7 +44,7 @@ body {
 
 .date {
   color: rgba(27, 24, 29, 0.626);
-  font-family: "Changa";
+  font-family: "Lato";
   font-weight: 700;
   font-size: 35px;
 }
@@ -131,7 +131,7 @@ body {
   border: 3px solid #7f12d3;
   padding: 10px;
   height: 20px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 15px;
   outline: none;
   color: #fefefe;
 }
